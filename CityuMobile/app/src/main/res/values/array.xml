@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="avatarList">
+        <item>Boy</item>
+        <item>Boy_1</item>
+        <item>Girl</item>
+        <item>Girl_1</item>
+        <item>Man</item>
+        <item>Man_1</item>
+        <item>Man_2</item>
+        <item>Man_3</item>
+    </string-array>
+
+    <string-array name="objectSize">
+        <item>Small</item>
+        <item>Middle</item>
+        <item>Big</item>
+    </string-array>
+
+    <string-array name="priority">
+        <item>Normal</item>
+        <item>Urgent</item>
+    </string-array>
+
+    <string-array name="lastTime">
+        <item>2</item>
+        <item>6</item>
+        <item>12</item>
+        <item>24</item>
+        <item>48</item>
+    </string-array>
+</resources>

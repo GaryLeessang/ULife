@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ViewPost"
+        android:icon="@drawable/ic_featured_play_list_black_24dp"
+        android:title="Express" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_rate_review_black_24dp"
+        android:title="Editor" />
+
+    <item
+        android:id="@+id/ConversationPage"
+        android:icon="@drawable/ic_textsms_black_24dp"
+        android:title="Order"/>
+    <item
+        android:id="@+id/UserPage"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="User" />
+
+</menu>

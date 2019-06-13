@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgblur_dark"
+        android:fitsSystemWindows="true">
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="302dp"
+            android:layout_height="262dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ulife" />
+
+        <TextView
+            android:id="@+id/who"
+            android:layout_width="131dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center_vertical"
+            android:text="who we are"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="355dp"
+            android:layout_height="182dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:text="We are a group of graduate students of the School of Electronic Engineering of the City University of Hong Kong who love to share and love to study. Helping students solve problems in their lives is our source of pursuit and happiness. Welcome friends with like-mindedness to join us and build a beautiful Hong Kong!"
+            android:textAlignment="textStart"
+            android:textColor="@color/Gray"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/who" />
+    </android.support.constraint.ConstraintLayout>
+
+
+</layout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:background="@drawable/bgblur_dark">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_passwordStatement"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Enter a new password for this account."
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/round_background"
+                android:backgroundTint="#2D000000"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_account"
+                android:layout_width="107dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="32dp"
+                android:text="Account"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_passwordStatement" />
+
+            <TextView
+                android:id="@+id/oldPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="Old password"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/txt_nickName"
+                app:layout_constraintTop_toBottomOf="@+id/txt_nickName" />
+
+            <TextView
+                android:id="@+id/newPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_marginTop="44dp"
+                android:text="New password"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/oldPassword"
+                app:layout_constraintTop_toBottomOf="@+id/oldPassword" />
+
+            <TextView
+                android:id="@+id/txt_studentID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:text="studentID"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_account"
+                app:layout_constraintStart_toEndOf="@+id/txt_account"
+                app:layout_constraintTop_toTopOf="@+id/txt_account"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/et_oldPassword"
+                android:layout_width="171dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="enter old password"
+                android:inputType="textPassword"
+                app:layout_constraintBottom_toBottomOf="@+id/oldPassword"
+                app:layout_constraintStart_toStartOf="@+id/nickName"
+                app:layout_constraintTop_toTopOf="@+id/oldPassword"
+                app:layout_constraintVertical_bias="0.238" />
+
+            <EditText
+                android:id="@+id/et_newPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="enter new password"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="@+id/newPassword"
+                app:layout_constraintEnd_toEndOf="@+id/et_oldPassword"
+                app:layout_constraintStart_toStartOf="@+id/et_oldPassword"
+                app:layout_constraintTop_toTopOf="@+id/newPassword"
+                app:layout_constraintVertical_bias="0.388" />
+
+            <TextView
+                android:id="@+id/txt_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginTop="44dp"
+                android:text="confirm "
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/newPassword"
+                app:layout_constraintTop_toBottomOf="@+id/newPassword" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="reenter new password"
+                android:inputType="textPassword"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_confirm"
+                app:layout_constraintEnd_toEndOf="@+id/et_newPassword"
+                app:layout_constraintStart_toStartOf="@+id/et_newPassword"
+                app:layout_constraintTop_toTopOf="@+id/txt_confirm" />
+
+            <TextView
+                android:id="@+id/txt_nickName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Nick name"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/txt_account"
+                app:layout_constraintTop_toBottomOf="@+id/txt_account" />
+
+            <TextView
+                android:id="@+id/nickName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_nickName"
+                app:layout_constraintStart_toStartOf="@+id/txt_studentID"
+                app:layout_constraintTop_toTopOf="@+id/txt_nickName" />
+
+            <TextView
+                android:id="@+id/bt_writenickname"
+                android:layout_width="81dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="44dp"
+                android:background="@drawable/round_rectangle"
+                android:backgroundTint="#45000000"
+                android:gravity="center"
+                android:text="Edit"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/nickName"
+                app:layout_constraintStart_toEndOf="@+id/nickName"
+                app:layout_constraintTop_toTopOf="@+id/nickName"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/ok"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/round_rectangle"
+                android:backgroundTint="#92FFFFFF"
+                android:gravity="center"
+                android:text="confirm"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.493"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_confirm" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</layout>

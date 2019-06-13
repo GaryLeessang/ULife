@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="2dp"
+    android:background="#FFFFFF">
+
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/sample1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inforBar">
+        <!-- Bottom View Start-->
+        <LinearLayout
+            android:id="@+id/bottom_wrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#66FFFFFF"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <!--What you want to show-->
+            <Button
+                android:id="@+id/infoBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00A6FF"
+                android:text="Info"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/deleteBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FC9D37"
+                android:text="Delete"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <!-- Bottom View End-->
+
+        <!-- Surface View Start -->
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/surface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:padding="10dp">
+            <!--What you want to show in SurfaceView-->
+
+            <TextView
+                android:id="@+id/targetUid"
+                android:layout_width="114dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:fontFamily="monospace"
+                android:gravity="left"
+                android:text="UserID"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/applyAvatar"
+                app:layout_constraintTop_toTopOf="@+id/applyAvatar" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/applyAvatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="4dp"
+                android:src="@drawable/girl_1"
+                app:civ_circle_background_color="@color/Gray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/noteMsg"
+                android:layout_width="227dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Swap left get more info"
+                app:layout_constraintStart_toEndOf="@+id/applyAvatar"
+                app:layout_constraintTop_toBottomOf="@+id/targetUid" />
+
+            <TextView
+                android:id="@+id/refPostTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_background"
+                android:backgroundTint="#2D000000"
+                android:text="Loading..."
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                app:layout_constraintStart_toStartOf="@+id/noteMsg"
+                app:layout_constraintTop_toBottomOf="@+id/noteMsg" />
+
+        </android.support.constraint.ConstraintLayout>
+        <!-- Surface View End -->
+    </com.daimajia.swipe.SwipeLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
